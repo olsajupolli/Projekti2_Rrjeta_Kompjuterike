@@ -1,0 +1,15 @@
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\bin\Debug\net6.0\TCP_Klienti.exe
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\bin\Debug\net6.0\TCP_Klienti.deps.json
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\bin\Debug\net6.0\TCP_Klienti.runtimeconfig.json
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\bin\Debug\net6.0\TCP_Klienti.dll
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\bin\Debug\net6.0\TCP_Klienti.pdb
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.csproj.AssemblyReference.cache
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.AssemblyInfoInputs.cache
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.AssemblyInfo.cs
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.csproj.CoreCompileInputs.cache
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.dll
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\refint\TCP_Klienti.dll
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.pdb
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\TCP_Klienti.genruntimeconfig.cache
+C:\Users\jupol\source\repos\TCP_Klienti\TCP_Klienti\obj\Debug\net6.0\ref\TCP_Klienti.dll
