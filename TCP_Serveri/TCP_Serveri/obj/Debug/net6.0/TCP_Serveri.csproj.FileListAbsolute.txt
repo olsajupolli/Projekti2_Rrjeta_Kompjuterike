@@ -1,0 +1,15 @@
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\bin\Debug\net6.0\TCP_Serveri.exe
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\bin\Debug\net6.0\TCP_Serveri.deps.json
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\bin\Debug\net6.0\TCP_Serveri.runtimeconfig.json
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\bin\Debug\net6.0\TCP_Serveri.dll
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\bin\Debug\net6.0\TCP_Serveri.pdb
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.csproj.AssemblyReference.cache
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.AssemblyInfoInputs.cache
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.AssemblyInfo.cs
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.csproj.CoreCompileInputs.cache
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.dll
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\refint\TCP_Serveri.dll
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.pdb
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\TCP_Serveri.genruntimeconfig.cache
+C:\Users\jupol\source\repos\TCP_Serveri\TCP_Serveri\obj\Debug\net6.0\ref\TCP_Serveri.dll
