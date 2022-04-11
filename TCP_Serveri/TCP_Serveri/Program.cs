@@ -91,3 +91,95 @@ namespace MultiServer
             }
 
 
+            byte[] recBuf = new byte[received];
+            Array.Copy(buffer, recBuf, received);
+            string text = Encoding.ASCII.GetString(recBuf);
+            Console.WriteLine("Received Text: " + text);
+
+
+
+
+            if (text.ToLower() == "get time") // Client requested time
+            {
+                Console.WriteLine("Text is a get time request");
+                byte[] data = Encoding.ASCII.GetBytes(DateTime.Now.ToLongTimeString());
+                current.Send(data);
+                Console.WriteLine("Time sent to client");
+            }
+
+            else if (text.ToLower() == "ooop create file") // client wants to create file
+            {
+                Console.WriteLine("Text is a create file request");
+                string path = @"C:\Users\jupol\OneDrive\Desktop\projekti rrjeta";
+                using (FileStream fs = File.Create(path)) ;
+                byte[] data = Encoding.ASCII.GetBytes("The file has been created");
+                current.Send(data);
+            }
+
+            else if (text.ToLower() == "ooop delete file") // client wants to delete file
+            {
+                Console.WriteLine("Text is a delete file request");
+                string path = @"C:\Users\jupol\OneDrive\Desktop\projekti rrjeta";
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    byte[] data = Encoding.ASCII.GetBytes("The file has been deleted");
+                    current.Send(data);
+                }
+            }
+            else if (text.Contains("read") == true) //any client can read file
+            {
+                Console.WriteLine("Text is a read file request");
+                string text1 = System.IO.File.ReadAllText(@"C:\Users\jupol\OneDrive\Desktop\projekti rrjeta");
+                byte[] data1 = Encoding.ASCII.GetBytes(text1);
+                current.Send(data1);
+            }
+            else if (text.ToLower() == "ooop write file") //client wants to write file
+            {
+                Console.WriteLine("Text is a write file request");
+                string createText = "Hello and Welcome" + Environment.NewLine;
+                File.WriteAllText(@"C:\Users\jupol\OneDrive\Desktop\projekti rrjeta", createText);
+                byte[] data2 = Encoding.ASCII.GetBytes(createText);
+                current.Send(data2);
+            }
+            else if (text.ToLower() == "ooop open file")
+            {
+                Console.WriteLine("Text is a open file request");
+                Process p = new Process();
+                ProcessStartInfo pi = new ProcessStartInfo();
+                pi.UseShellExecute = true;
+                pi.FileName = @"C:\Users\jupol\OneDrive\Desktop\projekti rrjeta";
+                p.StartInfo = pi;
+                try
+                {
+                    p.Start();
+                }
+                catch (Exception Ex)
+                {
+                    //MessageBox.Show(Ex.Message);
+                }
+                byte[] data3 = Encoding.ASCII.GetBytes(pi.FileName);
+                current.Send(data3);
+            }
+            else if (text.ToLower() == "exit") // Client wants to exit gracefully
+            {
+                // Always Shutdown before closing
+                current.Shutdown(SocketShutdown.Both);
+                current.Close();
+                clientSockets.Remove(current);
+                Console.WriteLine("Client disconnected");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Text is an invalid request");
+                byte[] data = Encoding.ASCII.GetBytes("Invalid request");
+                current.Send(data);
+                Console.WriteLine("Warning Sent");
+
+            }
+
+            current.BeginReceive(buffer, 0, BUFFER_SIZE, SocketFlags.None, ReceiveCallback, current);
+        }
+    }
+}
